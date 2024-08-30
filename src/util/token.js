@@ -7,11 +7,11 @@ const checktoken = async (token, id, key) => {
           jwt.verify(token, key, (err, decoded) => {
             console.log(decoded)
               if (err) {
-                  resolve(false); // Token inválido ou erro na verificação
+                  resolve(false); 
               } else if (decoded.id === id) {
-                  resolve(true); // Token válido e ID correspondente
+                  resolve(true);  
               } else {
-                  resolve(false); // ID não corresponde
+                  resolve(false);
               }
           });
       });
