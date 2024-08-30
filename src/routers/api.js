@@ -16,7 +16,7 @@ app.use('/' , router.get('/sobre' , (req, res)=>{
     res.status(200).send({
         "nome" : "chat",
         "versão" : "1.0.0",
-        "autor" : "nicolas", 
+        "autor" : "Bruno Bernardo Cardoso Philippsen", 
     })
 }))
 
